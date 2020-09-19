@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Food</string>
+<!--    Main-->
+    <string name="rice">Cơm Phần</string>
+    <string name="voucher_rice">Voucher Cơm Phần</string>
+    <string name="noodle">Bún Phở</string>
+    <string name="voucher_noodle">Voucher Bún Phở</string>
+    <string name="snack">Ăn Vặt</string>
+    <string name="voucher_snack">Voucher Ăn Vặt</string>
+    <string name="milk_tea">Trà Sữa</string>
+    <string name="voucher_milk_tea">Voucher Trà Sữa</string>
+<!--    Map-->
+    <string name="set_map_type">LOẠI BẢN ĐỒ</string>
+    <string name="map_type_normal">Ban ngày</string>
+    <string name="map_type_night">Ban đêm</string>
+    <string name="map_type_satellite">Vệ tinh</string>
+    <string name="get_list_product">Xem danh sách</string>
+
+
+    <string name="mess_request_permission">Bạn cần cho phép truy cập</string>
+</resources>

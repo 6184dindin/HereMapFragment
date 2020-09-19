@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.heremap.heremapfragment">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.FragmentHereMap"></activity>
+        <!--
+        Developers should put application credentials here.To obtain them, please register the application
+         at https://developer.here.com/develop/mobile-sdks
+        -->
+        <meta-data
+            android:name="com.here.android.maps.appid"
+            android:value="3Bkj14hEQQXXrbeKFhjx" />
+        <meta-data
+            android:name="com.here.android.maps.apptoken"
+            android:value="C-jboqvxSkXBeb75aWxFBw" />
+        <meta-data
+            android:name="com.here.android.maps.license.key"
+            android:value="Yp8mHbM3NH+9Fce7ah6Z/O13fM05AANL8fvXRqKf3TJwVrF0Ang+FWRmJAa58D3RE91K/v/8LDqfpyFEPIgJUCmugEYO4085y22aWBPPFy2ZQQDZ/C6zBD77TTrvcQ7Rm/cAs/QSFFMxSAJVQKi9h1abGpJAPc6BwsuybgjaqM28Y0R5uRoiogvz+fD7aWCxIB+h2YRP4YZWMW4pmaVysaM+sSzqpyl0ykmWaYku1tP6zEK42Xt1COnU4Hk4MDSK5ftbTmL++1jYf9M5QVKHtzgkZcndAIk0Sipezq9cbG0+t8f11mmWp8BcDVEuqX+pDKyhsCalxklSL3w32x4GxkLuiczmoPyov9zSEeyqVq4QdCKVEDRh1rRxLyyygaXCs0oAmMEaVMOQLO88mcyGDnLsXGJlIzs4R8QkVUDE7o1kU8s36DWu/U3CkT6eEsy+Neigh1A0bD3dqbIGBov2bPp9+dnSg5m1YmY6iv2p87y5U4SdOzcnLogjbEob+m0iaAwYiekDHRjqosYnblBKwdUro56Iye1KvBZOBckZ/Exl8lJkH1uOAu5SINoqn1I0uJZCUtoKNf1lBIWuelThMDAT4SwEcuJQ9LZDi5CpLDAHAz2j4VP+nxzO2mz2UyH4a8fY5GVmFaoyHGSrJHO2HcIh9XCKoNcVAX/LkH7og+c=" />
+
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
